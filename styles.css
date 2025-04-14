@@ -40,6 +40,8 @@ label {
   color: #333;
 }
 
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 12px;
@@ -48,6 +50,7 @@ textarea {
   border-radius: 6px;
   resize: vertical;
 }
+
 
 input[type="submit"] {
   width: 100%;
