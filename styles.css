@@ -30,6 +30,15 @@ body {
   font-size: 0.95rem;
 }
 
+/* Progress indicator styling */
+.progress {
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: var(--edun-primary);
+}
+
 /* Improve spacing on mobile */
 @media (max-width: 576px) {
   .card {
@@ -41,4 +50,9 @@ body {
   .card-header {
     padding: 1.25rem 1.25rem 1rem;
   }
+   .card-body h2.h5 {
+    font-size: 1.1rem;
+  }
 }
+
+
