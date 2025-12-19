@@ -37,7 +37,7 @@
   <!-- Progress Indicator -->
   <div class="mb-4 text-center">
     <div class="progress" style="height: 6px; border-radius: 3px; max-width: 300px; margin: 0 auto 12px;">
-      <div class="progress-bar bg-edun" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar bg-edun" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <p class="text-muted small mb-0"><strong>Step 1 of 2</strong> — Brand Questions</p>
   </div>
@@ -104,9 +104,35 @@
     ></textarea>
   </div>
 
-  <!-- Q6: Logo type -->
+  <!-- Q6: How should clients feel? -->
   <div class="mb-4">
-    <label class="form-label fw-bold">6. What kind of logo would you like?</label>
+    <label for="q6" class="form-label fw-bold">6. How do you want your clients to feel about your brand?</label>
+    <textarea 
+      class="form-control" 
+      id="q6" 
+      name="Client emotional response" 
+      rows="3" 
+      placeholder="e.g., Confident, Inspired, Trusted..."
+      required
+    ></textarea>
+  </div>
+
+  <!-- Q7: Brand vision -->
+  <div class="mb-4">
+    <label for="q7" class="form-label fw-bold">7. Briefly describe what you want your brand to be.</label>
+    <textarea 
+      class="form-control" 
+      id="q7" 
+      name="Brand vision" 
+      rows="4" 
+      placeholder="Describe your ideal brand identity, values, and presence..."
+      required
+    ></textarea>
+  </div>
+
+  <!-- Q8: Logo type -->
+  <div class="mb-4">
+    <label class="form-label fw-bold">8. What kind of logo would you like?</label>
     <div class="logo-options">
       <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo1" value="Wordmark logo" required><label class="form-check-label" for="logo1">Wordmark logo</label></div>
       <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo2" value="Lettermark (monogram)" required><label class="form-check-label" for="logo2">Lettermark (monogram)</label></div>
@@ -123,7 +149,6 @@
   <hr class="my-4" />
 
   <!-- === STEP 2: CONTACT & CONSENT === -->
-  <!-- Update progress to Step 2 visually -->
   <div class="mb-4 text-center">
     <div class="progress" style="height: 6px; border-radius: 3px; max-width: 300px; margin: 0 auto 12px;">
       <div class="progress-bar bg-edun" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -183,5 +208,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
