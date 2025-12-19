@@ -25,166 +25,155 @@
         </p>
 
         <form 
-          name="edun-brand-survey" 
-          method="POST" 
-          data-netlify="true" 
-          action="/thankyou.html"
-          id="brandForm"
-        >
-          <!-- Netlify requires this hidden input to identify the form -->
-          <input type="hidden" name="form-name" value="edun-brand-survey" />
+  name="edun-brand-survey" 
+  method="POST" 
+  data-netlify="true" 
+  action="/thankyou.html"
+  id="brandForm"
+>
+  <!-- Netlify hidden field -->
+  <input type="hidden" name="form-name" value="edun-brand-survey" />
 
-          <!-- Q1: Target Audience -->
-          <div class="mb-4">
-            <label for="q1" class="form-label fw-bold">1. Who is your target audience?</label>
-            <textarea 
-              class="form-control" 
-              id="q1" 
-              name="Target Audience" 
-              rows="3" 
-              required
-            ></textarea>
-          </div>
+  <!-- Progress Indicator -->
+  <div class="mb-4 text-center">
+    <div class="progress" style="height: 6px; border-radius: 3px; max-width: 300px; margin: 0 auto 12px;">
+      <div class="progress-bar bg-edun" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p class="text-muted small mb-0"><strong>Step 1 of 2</strong> — Brand Questions</p>
+  </div>
 
-          <!-- Q2: What makes you stand out? -->
-          <div class="mb-4">
-            <label for="q2" class="form-label fw-bold">2. What makes you stand out?</label>
-            <textarea 
-              class="form-control" 
-              id="q2" 
-              name="What makes you stand out?" 
-              rows="3" 
-              required
-            ></textarea>
-          </div>
+  <!-- === STEP 1: BRAND QUESTIONS === -->
+  <!-- Q1: Target Audience -->
+  <div class="mb-4">
+    <label for="q1" class="form-label fw-bold">1. Who is your target audience?</label>
+    <textarea 
+      class="form-control" 
+      id="q1" 
+      name="Target Audience" 
+      rows="3" 
+      required
+    ></textarea>
+  </div>
 
-          <!-- Q3: 3 words that describe your brand -->
-          <div class="mb-4">
-            <label for="q3" class="form-label fw-bold">3. Three words that describe your brand</label>
-            <input 
-              type="text" 
-              class="form-control" 
-              id="q3" 
-              name="Three brand words" 
-              placeholder="e.g., Bold, Trustworthy, Modern"
-              required
-            />
-          </div>
+  <!-- Q2: What makes you stand out? -->
+  <div class="mb-4">
+    <label for="q2" class="form-label fw-bold">2. What makes you stand out?</label>
+    <textarea 
+      class="form-control" 
+      id="q2" 
+      name="What makes you stand out?" 
+      rows="3" 
+      required
+    ></textarea>
+  </div>
 
-          <!-- Q4: Service offered -->
-          <div class="mb-4">
-            <label for="q4" class="form-label fw-bold">4. What service does your brand offer?</label>
-            <textarea 
-              class="form-control" 
-              id="q4" 
-              name="Brand service" 
-              rows="2" 
-              required
-            ></textarea>
-          </div>
+  <!-- Q3: 3 words that describe your brand -->
+  <div class="mb-4">
+    <label for="q3" class="form-label fw-bold">3. Three words that describe your brand</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="q3" 
+      name="Three brand words" 
+      placeholder="e.g., Bold, Trustworthy, Modern"
+      required
+    />
+  </div>
 
-          <!-- Q5: Brand personality -->
-          <div class="mb-4">
-            <label for="q5" class="form-label fw-bold">5. What is your brand personality?</label>
-            <textarea 
-              class="form-control" 
-              id="q5" 
-              name="Brand personality" 
-              rows="3" 
-              required
-            ></textarea>
-          </div>
+  <!-- Q4: Service offered -->
+  <div class="mb-4">
+    <label for="q4" class="form-label fw-bold">4. What service does your brand offer?</label>
+    <textarea 
+      class="form-control" 
+      id="q4" 
+      name="Brand service" 
+      rows="2" 
+      required
+    ></textarea>
+  </div>
 
-          <!-- Q6: Logo type (radio buttons, only one selectable) -->
-          <div class="mb-4">
-            <label class="form-label fw-bold">6. What kind of logo would you like?</label>
-            <div class="logo-options">
-              <!-- Use radio buttons, not checkboxes, to enforce single selection -->
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo1" value="Wordmark logo" required>
-                <label class="form-check-label" for="logo1">Wordmark logo</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo2" value="Lettermark (monogram)" required>
-                <label class="form-check-label" for="logo2">Lettermark (monogram)</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo3" value="Brandmark" required>
-                <label class="form-check-label" for="logo3">Brandmark</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo4" value="Combination mark" required>
-                <label class="form-check-label" for="logo4">Combination mark</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo5" value="Emblem" required>
-                <label class="form-check-label" for="logo5">Emblem</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo6" value="Mascot logo" required>
-                <label class="form-check-label" for="logo6">Mascot logo</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo7" value="Abstract logo" required>
-                <label class="form-check-label" for="logo7">Abstract logo</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo8" value="Pictorial logo" required>
-                <label class="form-check-label" for="logo8">Pictorial logo</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="LogoType" id="logo9" value="Minimal logo" required>
-                <label class="form-check-label" for="logo9">Minimal logo</label>
-              </div>
-            </div>
-          </div>
+  <!-- Q5: Brand personality -->
+  <div class="mb-4">
+    <label for="q5" class="form-label fw-bold">5. What is your brand personality?</label>
+    <textarea 
+      class="form-control" 
+      id="q5" 
+      name="Brand personality" 
+      rows="3" 
+      required
+    ></textarea>
+  </div>
 
-          <hr class="my-4" />
+  <!-- Q6: Logo type -->
+  <div class="mb-4">
+    <label class="form-label fw-bold">6. What kind of logo would you like?</label>
+    <div class="logo-options">
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo1" value="Wordmark logo" required><label class="form-check-label" for="logo1">Wordmark logo</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo2" value="Lettermark (monogram)" required><label class="form-check-label" for="logo2">Lettermark (monogram)</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo3" value="Brandmark" required><label class="form-check-label" for="logo3">Brandmark</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo4" value="Combination mark" required><label class="form-check-label" for="logo4">Combination mark</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo5" value="Emblem" required><label class="form-check-label" for="logo5">Emblem</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo6" value="Mascot logo" required><label class="form-check-label" for="logo6">Mascot logo</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo7" value="Abstract logo" required><label class="form-check-label" for="logo7">Abstract logo</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo8" value="Pictorial logo" required><label class="form-check-label" for="logo8">Pictorial logo</label></div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="LogoType" id="logo9" value="Minimal logo" required><label class="form-check-label" for="logo9">Minimal logo</label></div>
+    </div>
+  </div>
 
-          <!-- Credentials -->
-          <h2 class="h5 mb-3">Your Contact Details</h2>
-          
-          <div class="mb-3">
-            <label for="fullname" class="form-label fw-bold">Full Name</label>
-            <input 
-              type="text" 
-              class="form-control" 
-              id="fullname" 
-              name="Full Name" 
-              placeholder="e.g., John Doe" 
-              required
-            />
-          </div>
+  <hr class="my-4" />
 
-          <div class="mb-3">
-            <label for="email" class="form-label fw-bold">Email Address</label>
-            <input 
-              type="email" 
-              class="form-control" 
-              id="email" 
-              name="Email" 
-              placeholder="you@example.com" 
-              required
-            />
-          </div>
+  <!-- === STEP 2: CONTACT & CONSENT === -->
+  <!-- Update progress to Step 2 visually -->
+  <div class="mb-4 text-center">
+    <div class="progress" style="height: 6px; border-radius: 3px; max-width: 300px; margin: 0 auto 12px;">
+      <div class="progress-bar bg-edun" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p class="text-muted small mb-0"><strong>Step 2 of 2</strong> — Your Contact Details</p>
+  </div>
 
-          <!-- GDPR / Privacy Notice -->
-<div class="form-check mb-4">
-  <input 
-    class="form-check-input" 
-    type="checkbox" 
-    id="privacyConsent" 
-    name="Privacy Consent" 
-    required
-  >
-  <label class="form-check-label text-muted small" for="privacyConsent">
-    I agree that my submitted data will be used solely to design my brand identity. 
-    Your information is confidential and will not be shared with third parties.
-  </label>
-</div>
+  <h2 class="h5 mb-3 visually-hidden">Contact Information</h2>
+  
+  <div class="mb-3">
+    <label for="fullname" class="form-label fw-bold">Full Name</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="fullname" 
+      name="Full Name" 
+      placeholder="e.g., John Doe" 
+      required
+    />
+  </div>
 
-          <button type="submit" class="btn btn-edun w-100 py-2">Submit Questionnaire</button>
-        </form>
+  <div class="mb-3">
+    <label for="email" class="form-label fw-bold">Email Address</label>
+    <input 
+      type="email" 
+      class="form-control" 
+      id="email" 
+      name="Email" 
+      placeholder="you@example.com" 
+      required
+    />
+  </div>
+
+  <!-- GDPR Consent -->
+  <div class="form-check mb-4">
+    <input 
+      class="form-check-input" 
+      type="checkbox" 
+      id="privacyConsent" 
+      name="Privacy Consent" 
+      required
+    >
+    <label class="form-check-label text-muted small" for="privacyConsent">
+      I agree that my submitted data will be used solely to design my brand identity. 
+      Your information is confidential and will not be shared with third parties.
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-edun w-100 py-2">Submit Questionnaire</button>
+</form>
       </div>
     </div>
   </div>
@@ -194,4 +183,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
